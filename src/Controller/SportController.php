@@ -27,6 +27,7 @@ class SportController extends AbstractController
         );
     }
 
+    // FUNKCIJA ZA UNOS SPORTOVA
 
     /**
      * @Route("/insert", name="insert")
@@ -52,6 +53,10 @@ class SportController extends AbstractController
         ]);
     }
 
+
+    // FUNKCIJA ZA BRISANJE SPORTOVA
+
+
     /**
      * @Route("/delete/{id}", name="delete")
      */
@@ -66,6 +71,10 @@ class SportController extends AbstractController
         return $this->redirectToRoute('index');
 
     }
+
+
+    // FUNKCIJA ZA EDIT SPORTOVA
+
 
     /**
      * @Route("/edit/{id}", name="edit")
@@ -93,5 +102,9 @@ class SportController extends AbstractController
 
 
     }
+
+
+
+
 
 }
