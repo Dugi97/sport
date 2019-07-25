@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SportController!{% endblock %}
+
+{% block body %}
+
+<a href="/insert">INSERT NEW SPORT !</a> <br>
+    {% for sport in allSports %}
+
+        {{ sport.name }}
+        {{ sport.type }}
+        <a href="/delete/{{ sport.id }}">DELETE</a>
+        <a href="/edit/{{ sport.id }}">EDIT</a>
+
+        <br>
+
+    {% endfor %}
+
+{% endblock %}

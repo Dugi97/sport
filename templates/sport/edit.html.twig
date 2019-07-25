@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SportController!{% endblock %}
+
+{% block body %}
+
+<form action="{{ sport.id }}" method="post">
+    <input type="text" name="name" value="{{ sport.name }}">
+    <input type="text" name="type" value="{{ sport.type }}">
+    <button type="submit" name="send" value="send">Save changes</button>
+</form>
+
+{% endblock %}
